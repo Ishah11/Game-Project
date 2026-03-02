@@ -1,0 +1,69 @@
+List of improvements to game Total 41 points of improvements:
+
+1) drop command:
+Created a function within the player class that takes an item name string as an input and parsed through the list of items that the player stored. If the item is there then the item is removed from the list and stored back into the room. Otherwise it says that the item does not exist. Then called the function in the main method with the added drop command.
+
+1) wait command:
+Created a separate entry widget using tkinter to show up on the user interface, here the person playing can input the amount of time that has passed and the updater function is called that amount of times after each loop. At the bottom of the main 
+
+2) me command:
+Created the me function within the player class that lists the players current attributes. Then added that command to the main function
+
+2) Bigger World 
+Created multiple objects from the room class, which were given different names and connected to other rooms
+
+2) Inventory maximum size
+In the pickup function added a feature to only allow for 5 items in the inventory, so if it exceeds 5 then it prints a request for the person to drop the item
+
+2) Inspect command
+Created an inspect function in the player class that takes the player's room as an input and displays the players items and descriptions along with the items in the room and descriptions
+
+2) Weapons
+Created a separate input within the item constructor that is optional for whether the item is a weapon or not, if it is true then the item adds points to the player's health and increases the players probability of winning
+
+2) Armor
+Similar to Weapons there is an optional boolean input that the Item class takes for whether the item is Armor or not. If it's true it adds a certain number of points to the player's health and increases the players probability of winning
+
+2) Victory Condition
+Checks at the end of the main loop to see if the heart of Jumanji is in the final room. Then it displays the victory 
+
+2) Locked Chests
+Created chests to store items, which are randomly placed in some rooms, each have a specific key needed that matches with the name of the chest. Created an unlock chest command that checks the given key in the players inventory with the key needed to open the chest
+
+2) Locked Doors
+Created randomly locked doors, with Keys that match the name of the room, that are randomly placed throughout the game Created an unlock door command that checks the given key in the players inventory with the key needed to open the door
+
+2) Regeneration
+The player is given 3 lives total and if they lose all of their health or pickup an item that is their weakness, then they lose a life but are given the initial health points back. If the player loses all 3 lives then you lose the game
+
+3) Loot
+Items can be randomly placed in the inventory of the monster, which releases the times back into the room if they have been defeated. This condition in in the monster die function
+
+3) Events
+A weather class has been created that is generated in some rooms randomly in the updater function. The weather can affect the player's health depending on if the player is in the same room as the weather, this is checked in the wait function 
+
+3) Special Rooms
+There are two special rooms in the game, one is a hospital where it adds back some points to the player's health. The second room is the switch room that can switch the current player with the second player option so the player has different strength and weakness attributes
+
+3) Player Attributes
+The players are assigned some strengths and weaknesses that are displayed on the screen and define their probability of winning fights with monsters
+
+3) Command Abbreviations
+Created a function in the main method called abbrev that accepts any string that is at the start of any command except for inventory and inspect both of which need a longer string 
+
+4) Characters
+At the beginning of the game, using tkinter a window opens up that allows for the person playing to choose a specific character based their strengths and weaknesses
+
+Some additional points) GUIs
+Using tkinter, a window was created that displays a text file, where the player sees the result of their actions, an entry window for both the time spent and the commands, and an enter button which calls the main command loop. The enter button is takes the main loop as its command. At the top of the screen using the rectangle feature boxes were created to represent the rooms with their name labeled underneath. Smaller square was created to represent where the player is in the game which was updated every time through the loop checking the players location in the game. Small windows were created to pick the player in both the beginning and in the switch rooms which have buttons that are linked to the choose player A and player B functions. Smaller windows are created in the attack and hide functions about whether the player wants to continue if the monster is in their weakness and that the monster has caught up and asks to attack monster. 
+
+
+
+
+
+
+
+
+
+
+
