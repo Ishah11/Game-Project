@@ -1,4 +1,4 @@
-#Jumanji-Style Adventure Game
+**Jumanji-Style Adventure Game**
 
 A Python-based adventure game built with a graphical user interface (GUI). Inspired by Jumanji-style gameplay, the player explores an environment, collects required items, and avoids monsters to survive and win the game.
 
